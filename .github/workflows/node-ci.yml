@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x] # Chỉ định phiên bản Node.js
+        node-version: [18.x]
 
     steps:
     - name: Checkout repository
@@ -25,7 +25,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm ci
+      run: npm install # Đổi từ 'npm ci' sang 'npm install' để linh hoạt hơn
 
     - name: Build project
       run: npm run build
