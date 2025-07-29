@@ -1,4 +1,3 @@
-import React from 'react';
 import { CreatePoolForm } from '../components/CreatePoolForm'; // Import component mới
 
 export const DashboardPage = () => {
